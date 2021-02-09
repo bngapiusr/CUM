@@ -9,18 +9,35 @@ namespace CUM.Test.Users
         #region Get By Id
 
         [Fact]
-        public async void Task_GetUserById_Return_OkResult()
+        public void AddUser_Return_UserId()
         {
-            // Arrange the data
-            var controller = new UserController();
-            var userId = 1;
+            // Arrange
+            var user = new User();
 
-            // Performing the data
-            var data = await controller.GetPost(userId);
+            // Act
+            cxt.User.Add(user);
+            cxt.SaveChanges();
 
-            // Matching the ouput (Arrange, Act, Assert)
-            Assert.IsType<OkObjectResult>(data);
+            // Assert
+            Assert.Equal(1, user.UserId);
+
         }
+
+        //[Fact]
+        //public async void Task_GetUserById_Return_OkResult()
+        //{
+        //    // Arrange the data
+        //    var controller = new UserController();
+        //    var userId = 1;
+
+        //    // Performing the data
+        //    var data = await controller.GetPost(userId);
+
+        //    // Matching the ouput (Arrange, Act, Assert)
+        //    Assert.IsType<OkObjectResult>(data);
+        //}
+
+
 
         #endregion
     }
