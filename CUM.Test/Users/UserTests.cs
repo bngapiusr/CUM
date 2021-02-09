@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using CUM.Domain.Entities;
+using Xunit;
 
 namespace CUM.Test.Users
 {
@@ -6,13 +7,13 @@ namespace CUM.Test.Users
     {
 
 
-        #region Get By Id
+        #region Add User
 
         [Fact]
         public void AddUser_Return_UserId()
         {
             // Arrange
-            var user = new User();
+            var user = new UserRequest();
 
             // Act
             cxt.User.Add(user);
