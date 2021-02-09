@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUM.Test", "CUM.Test\CUM.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUM.Domain", "CUM.Domain\CUM.Domain.csproj", "{0051113F-FD90-411C-B164-8C7387CB289D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUM.Data", "CUM.Data\CUM.Data.csproj", "{AFE664E0-3041-4124-82B6-D617E55C697E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0051113F-FD90-411C-B164-8C7387CB289D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0051113F-FD90-411C-B164-8C7387CB289D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0051113F-FD90-411C-B164-8C7387CB289D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE664E0-3041-4124-82B6-D617E55C697E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE664E0-3041-4124-82B6-D617E55C697E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE664E0-3041-4124-82B6-D617E55C697E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE664E0-3041-4124-82B6-D617E55C697E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
