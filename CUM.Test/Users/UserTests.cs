@@ -13,7 +13,7 @@ namespace CUM.Test.Users
         public void AddUser_Return_UserId()
         {
             // Arrange
-            var user = new UserRequest
+            var userrequest = new UserRequest
             {
                 UserId = 0,
                 UserName = "TestUser",
@@ -21,25 +21,26 @@ namespace CUM.Test.Users
                 MiddleInitial = "J",
                 LastName = "Smith",
                 Email = "jsmith@testing.com",
-                EmailConfirmed = "smith@testing.com",
+                EmailConfirmed = "jsmith@testing.com",
                 Password = "P@ssw0rd"
             };
 
-            var newusr = new User
+            var user = new User
             {
-                UserId = user.UserId,
-                UserName = user.UserName,
-                FirstName = user.FirstName,
-                MiddleInitial = user.MiddleInitial,
-                LastName = user.LastName,
-                Email = user.Email,
-                EmailConfirmed = user.EmailConfirmed,
-                Password = user.Password
+                UserId = userrequest.UserId,
+                UserName = userrequest.UserName,
+                FirstName = userrequest.FirstName,
+                MiddleInitial = userrequest.MiddleInitial,
+                LastName = userrequest.LastName,
+                Email = userrequest.Email,
+                EmailConfirmed = userrequest.EmailConfirmed,
+                Password = userrequest.Password
 
             };
+           
 
             // Act
-            cxt.User.Add(newusr);
+            cxt.User.Add(user);
             cxt.SaveChanges();
 
             // Assert

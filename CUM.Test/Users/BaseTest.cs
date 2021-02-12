@@ -8,9 +8,9 @@ namespace CUM.Test.Users
     {
         protected CumContext cxt;
 
-        public BaseTest(CumContext cxtx = null )
+        public BaseTest(CumContext cxt = null )
         {
-            this.cxt = cxtx ?? GetInMemoryDBContext();
+            this.cxt = cxt ?? GetInMemoryDBContext();
         }
 
         private CumContext GetInMemoryDBContext()
